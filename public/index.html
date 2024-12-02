@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel Manager</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Channel Manager</h1>
+      <p style="margin-top: 10px;">Please add a channel ID with the <code>-100</code> prefix.</p>
+    </header>
+    <section style="margin-top: 10px;">
+      <form id="channelForm">
+        <input
+          type="text"
+          id="channelInput"
+          placeholder="Enter a channel ID"
+          required
+          aria-label="Channel ID"
+        />
+        <button type="submit">Add Channel</button>
+      </form>
+    </section>
+    <section class="list-section" style="margin-top: 20px;">
+      <h2>Channels</h2>
+      <ul id="channelList" aria-live="polite"></ul>
+    </section>
+  </main>
+  <footer style="margin-top: 10px;">
+    Made by
+    <a href="https://www.fiverr.com/s/ljLoP8R" target="_blank" rel="noopener noreferrer">szteambots</a>
+  </footer>
+  <script src="./script.js" defer></script>
+</body>
+</html>
